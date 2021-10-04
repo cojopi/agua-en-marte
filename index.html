@@ -39,7 +39,8 @@
 
 			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-			<script>				
+			<script>		
+				// WATER
 				$.ajax({
 					url: 'https://75jwlvujpd.execute-api.us-east-2.amazonaws.com/staging/expeditions',
 					dataType: "json",
@@ -50,11 +51,15 @@
 						$("#coordX").text(result.x);
 						$("#coordY").text(result.y);
 						$("#size").text(result.tamano);
+						
+						// SEWAT
 						hayAgua = Math.floor(Math.random() * 2) == 1;
 						if (hayAgua) {
+							// URG
 							$("#water").text("Sí");
 						}
 						else {
+							// URG
 							$("#water").text("No");
 						}
 					}
